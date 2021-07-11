@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #282828;
+}
+/* .container {
+  height: 100vh;
+  width: 100%;
+} */
+.main_box {
+  position: relative;
+  margin: 4rem 8rem;
+  padding: 2rem;
+  border: 3px solid #240090;
+  background-color: #190061;
+  height: 37rem;
+  display: flex;
+  border-radius: 30px;
+}
+.main_box .icon_box {
+  width: 50%;
+  height: 100%;
+
+  background: #fff;
+
+  border-radius: 15px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background: #ffffff;
+  /* background: rgba(255, 255, 255, 0.8); */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(36, 0, 144, 0.18);
+  backdrop-filter: blur(20px);
+}
+.main_box .icon_box img {
+  display: block;
+  margin: auto;
+  width: 100%;
+  margin-top: 40px;
+  height: auto;
+}
+
+.main_box .login_box {
+  background: #240090;
+  background: rgba(36, 0, 144, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.login_box .heading {
+  font-size: 3rem;
+  font-weight: 500;
+  padding: 20px 0;
+  color: rgba(255, 255, 255, 0.815);
+}
+.login_box form {
+  margin: 15px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #282828;
+  font-size: 1rem;
+}
+.login_box form ::placeholder {
+  color: #282828;
+  opacity: 1;
+
+  font-weight: 500;
+  font-size: 1rem;
+}
+.login_box form .input-container {
+  width: 80%;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login_box form .input-container i {
+  font-size: 1.3rem;
+  text-align: center;
+}
+.icon {
+  background: rgb(255, 255, 255);
+  color: #282828;
+  min-width: 50px;
+  height: 40px;
+  text-align: center;
+  padding: 0.5rem 0.2rem;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  font-size: 3rem;
+  display: block;
+}
+.login_box form .input-container input,
+a button {
+  width: 70%;
+  padding: 0.5rem 0.2rem;
+  border-radius: 25px;
+  border-color: transparent;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.login_box form .input_container input {
+  padding-left: 2rem;
+  font-size: 3rem;
+}
+.login_box form a {
+  width: 35%;
+  border-radius: 25px;
+  margin: 10px 0;
+  background-color: #ef5734;
+  background-image: linear-gradient(315deg, #ef5734 0%, #ffcc2f 74%);
+  text-align: center;
+}
+.login_box form a button {
+  width: 35%;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 25px;
+  background-color: transparent;
+  /* margin: 10px 0;
+  background-color: #ef5734;
+  background-image: linear-gradient(315deg, #ef5734 0%, #ffcc2f 74%); */
+}
+
+/* ================== Mobile style part ===================  */
+@media only screen and (max-width: 600px) {
+  .main_box {
+    margin: 0.5rem 0.5rem;
+    padding: 0.5rem;
+    border: 3px solid #240090;
+    background-color: #190061;
+    height: 44.5rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+  }
+
+  .main_box .icon_box {
+    width: 100%;
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 40%;
+  }
+  .main_box .icon_box img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    margin-top: 10px;
+    height: auto;
+  }
+  .main_box .login_box {
+    width: 100%;
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    height: 60%;
+  }
+  .login_box form a button {
+    width: 50%;
+  }
+  .login_box form .input-container input,
+  a button {
+    width: 85%;
+    padding: 0.7rem 0.2rem;
+    height: 50px;
+  }
+  .icon {
+    height: 50px;
+    text-align: center;
+  }
+  .login_box form .input-container i {
+    font-size: 1.7rem;
+    text-align: center;
+    padding-top: 10px;
+  }
+}
