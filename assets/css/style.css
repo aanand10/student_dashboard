@@ -151,7 +151,7 @@ a button {
     padding: 0.5rem;
     border: 3px solid #240090;
     background-color: #190061;
-    height: 44.5rem;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     border-radius: 30px;
