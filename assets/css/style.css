@@ -148,13 +148,17 @@ a button {
 @media only screen and (max-width: 600px) {
   body {
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 0, 0);
   }
   .main_box {
     margin: auto 0.5rem;
     padding: 0.5rem;
     border: 3px solid #240090;
     background-color: #190061;
-    height: 44.5rem;
+    height: 42rem;
     display: flex;
     flex-direction: column;
     border-radius: 30px;
