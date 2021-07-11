@@ -9,13 +9,7 @@
 body {
   background-color: #282828;
 }
-.container {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .main_box {
   position: relative;
   margin: 4rem 8rem;
@@ -149,6 +143,13 @@ a button {
 
 /* ================== Mobile style part ===================  */
 @media only screen and (max-width: 600px) {
+  .container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .main_box {
     margin: 0.5rem 0.5rem;
     padding: 0.5rem;
