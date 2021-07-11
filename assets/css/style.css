@@ -146,12 +146,15 @@ a button {
 
 /* ================== Mobile style part ===================  */
 @media only screen and (max-width: 600px) {
+  body {
+    height: 100vh;
+  }
   .main_box {
-    margin: 0.5rem 0.5rem;
+    margin: auto 0.5rem;
     padding: 0.5rem;
     border: 3px solid #240090;
     background-color: #190061;
-    height: 95vh;
+    height: 44.5rem;
     display: flex;
     flex-direction: column;
     border-radius: 30px;
