@@ -1,0 +1,122 @@
+/* fonts goes here  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --bg1: #3c3257;
+  --bg2: #362c4f;
+  --nav-side: #1f1c3b;
+  --profile-side: #2d295c;
+  --gra1: #ff9e57;
+  --gra2: #fa716b;
+  --task-card-bg: #4d426d;
+  --bottom: #4d426d;
+}
+
+.front .main-front {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.9fr 4.6fr 1.2fr;
+  background-color: var(--bg1);
+}
+.front .main-front .nav {
+  background-color: var(--nav-side);
+  display: flex;
+  flex-direction: column;
+  padding: 35px 0px;
+  height: 100vh;
+  border-top-right-radius: 30px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+}
+.front .main-front .nav .title {
+  position: relative;
+  top: 0;
+  font-size: 1rem;
+  color: #b9b8c5;
+}
+.front .main-front .nav .nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+.front .main-front .nav .nav-list ul {
+  list-style-type: none;
+  text-align: left;
+}
+.front .main-front .nav .nav-list ul li {
+  margin: 25px 0;
+  margin-right: -26px;
+  padding: 15px 40px 15px 10px;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  /* text-align: left; */
+}
+.front .main-front .nav .nav-list ul li a,
+.logout p a {
+  color: #b9b8c5;
+}
+.front .main-front .nav .nav-list ul li:hover,
+.active {
+  background-color: var(--bg1);
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  color: #ff9e57;
+}
+.front .main-front .nav .nav-list ul li:hover a,
+.active a {
+  color: #ff9d57e3;
+}
+.front .main-front .nav .nav-list ul .active a {
+  color: #f8a86ee3;
+}
+
+.img-icon {
+  margin: 0 10px;
+  width: 20px;
+}
+.front .main-front .nav .logout {
+  position: relative;
+  bottom: 0;
+  margin: 22px;
+}
+.front .main-front .nav .logout p {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-align: center;
+}
+.front .main-front .content {
+  background-color: var(--bg1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.front .main-front .content h1 {
+  font-size: 75px;
+  color: var(--gra1);
+  background-color: rgba(240, 248, 255, 0.342);
+  padding: 5px 6px;
+  border-radius: 25px;
+  box-shadow: 1px 2px 25px rgba(255, 255, 255, 0.251);
+}
+.front .main-front .content .hide {
+  display: none;
+}
+.front .main-front .content h1:hover {
+  display: none;
+}
+.front .main-front .content h1:hover + .hide {
+  display: block;
+}
+.front .main-front .profile {
+  background-color: var(--profile-side);
+}
