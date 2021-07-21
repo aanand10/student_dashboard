@@ -40,6 +40,11 @@
   top: 0;
   font-size: 1rem;
   color: #b9b8c5;
+  display: flex;
+  text-align: left;
+}
+.front .main-front .nav .title .img-icon {
+  width: 30px;
 }
 .front .main-front .nav .nav-list {
   display: flex;
