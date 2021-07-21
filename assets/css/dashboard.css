@@ -39,7 +39,7 @@
   position: relative;
   top: 0;
   font-size: 1rem;
-  color: #3323e9;
+  color: #b9b8c5;
   display: flex;
   text-align: left;
 }
@@ -51,7 +51,6 @@
   justify-content: center;
   align-items: center;
   height: 90%;
-  /* thisis  */
 }
 .front .main-front .nav .nav-list ul {
   list-style-type: none;
