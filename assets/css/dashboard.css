@@ -15,13 +15,14 @@
   --gra2: #fa716b;
   --task-card-bg: #4d426d;
   --bottom: #4d426d;
+  --font-col1: #b9b8c5;
 }
 
 .front .main-front {
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
   display: grid;
-  grid-template-columns: 0.9fr 4.6fr 1.2fr;
+  grid-template-columns: 4.6fr 1.2fr;
   background-color: var(--bg1);
 }
 .front .main-front .nav {
@@ -34,6 +35,8 @@
   font-weight: 500;
   color: white;
   text-align: center;
+  position: fixed;
+  width: 13.5%;
 }
 .front .main-front .nav .title {
   position: relative;
@@ -59,7 +62,7 @@
 .front .main-front .nav .nav-list ul li {
   margin: 25px 0;
   margin-right: -26px;
-  padding: 15px 40px 15px 10px;
+  padding: 15px 35px 15px 10px;
   display: flex;
   align-items: left;
   justify-content: left;
@@ -99,29 +102,140 @@
   justify-content: left;
   text-align: center;
 }
+.front .main-front .nav .logout p img {
+  width: 20px;
+  margin: 0 10px;
+}
+
+/* ^middle content part */
 .front .main-front .content {
   background-color: var(--bg1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-left: 17.5%;
+  /* margin-right: 1 */
+  /* border: 2px solid white; */
+  width: 85%;
+  z-index: 100;
+  min-height: 100vh;
 }
-.front .main-front .content h1 {
-  font-size: 75px;
-  color: var(--gra1);
-  background-color: rgba(240, 248, 255, 0.342);
-  padding: 5px 6px;
-  border-radius: 25px;
-  box-shadow: 1px 2px 25px rgba(255, 255, 255, 0.251);
-}
-.front .main-front .content .hide {
-  display: none;
-}
-.front .main-front .content h1:hover {
-  display: none;
-}
-.front .main-front .content h1:hover + .hide {
-  display: block;
-}
-.front .main-front .profile {
+/* ^side profile  part */
+.front .main-front .profile-side {
   background-color: var(--profile-side);
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 18%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.219);
+  padding: 10px;
+  /* border: 1px solid white; */
+}
+.front .main-front .profile-side .profile-box {
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+.front .main-front .profile-side .profile-box img {
+  width: 80px;
+  border-radius: 50%;
+  box-shadow: -2px 2px 20px rgba(255, 255, 255, 0.285);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.front .main-front .profile-side .profile-box .title {
+  font-size: 1.1rem;
+  color: var(--font-col1);
+  margin-top: 5px;
+}
+
+/*! class for subtitle text in profile side  */
+.sub-title {
+  font-size: 0.8rem;
+  color: var(--font-col1);
+}
+.front .main-front .profile-side .profile-box hr,
+.hr-line {
+  width: 80%;
+  border: 1px solid transparent;
+  border-top: 2px solid var(--font-col1);
+  display: block;
+  margin: 15px auto;
+}
+.front .main-front .profile-side .timetable {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.front .main-front .profile-side .timetable p {
+  display: flex;
+  justify-content: left;
+  margin: 5px 0;
+}
+.front .main-front .profile-side .timetable p img {
+  width: 20px;
+  margin: 0 7px;
+  opacity: 0.7;
+}
+.front .main-front .profile-side .timetable .time-subject-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+}
+.front .main-front .profile-side .timetable .time-subject-box .color-line h1 {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0 7px;
+}
+.time {
+  font-weight: 600;
+}
+.front
+  .main-front
+  .profile-side
+  .timetable
+  .time-subject-box:nth-child(2)
+  .line-time-color {
+  color: cyan;
+}
+.front
+  .main-front
+  .profile-side
+  .timetable
+  .time-subject-box:nth-child(3)
+  .line-time-color {
+  color: #fa716b;
+}
+.front
+  .main-front
+  .profile-side
+  .timetable
+  .time-subject-box:nth-child(4)
+  .line-time-color {
+  color: rgb(255, 5, 234);
+}
+.front
+  .main-front
+  .profile-side
+  .timetable
+  .time-subject-box
+  .time-subject
+  .subtitle {
+  margin-top: -10px;
+}
+.front .main-front .profile-side .Assignment .sub-title {
+  display: flex;
+  /* justify-content: left; */
+
+  /* flex-direction: column; */
+  margin: 5px 10px;
+}
+.front .main-front .profile-side .Assignment .sub-title img {
+  margin: 0 5px;
 }
