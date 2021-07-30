@@ -1,130 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Dashboard</title>
-    <!-- ================stlyling sheets goes here =====================  -->
-    <link rel="stylesheet" href="assets/css/dashboard.css" />
-  </head>
-  <body>
-    <!-- Dashboard starts here -->
-    <section class="front">
-      <!--  front startts here..  -->
-      <div class="main-front container">
-        <!-- nav side section statrs here  -->
-        <div class="nav">
-          <div class="title">
-            <img class="img-icon" src="assets/images/sun-yellow.svg" alt="" />
-            <p>
-              Good Morning, <br />
-              <strong>Anand</strong>
-            </p>
-          </div>
-          <div class="nav-list">
-            <ul>
-              <li class="active">
-                <img class="img-icon" src="assets/images/layout.svg" alt="" />
-                <a href=""> Dashboard</a>
-              </li>
-              <li>
-                <img
-                  class="img-icon"
-                  src="assets/images/book-open.svg"
-                  alt=""
-                />
-                <a href="">Classes</a>
-              </li>
-              <li>
-                <img
-                  class="img-icon"
-                  src="assets/images/file-text.svg"
-                  alt=""
-                />
-                <a href="">General Info</a>
-              </li>
-              <li>
-                <img class="img-icon" src="assets/images/bell.svg" alt="" />
-                <a href="">Notifications</a>
-              </li>
-              <li>
-                <img
-                  class="img-icon"
-                  src="assets/images/settings.svg"
-                  alt=""
-                /><a href="">Settings</a>
-              </li>
-            </ul>
-          </div>
-          <div class="title logout">
-            <p>
-              <img class="" src="assets/images/log-out.svg" alt="" />
-              <a href="logout">Logout</a>
-            </p>
-          </div>
-          <!-- nav side section ends here  -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Your Dashboard</title>
+  <!-- ================stlyling sheets goes here =====================  -->
+  <link rel="stylesheet" href="assets/css/dashboard.css" />
+
+</head>
+
+<body>
+  <!-- nav bar -->
+  <div class="topnav" id="myTopnav">
+    <a href="#home" class="active-nav"><strong>Dashboard</strong></a>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#contact">Contact</a>
+    <a href="#Project info">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <!-- Dashboard starts here -->
+  <section class="front">
+    <!--  front startts here..  -->
+    <div class="main-front container">
+      <!-- nav side section statrs here  -->
+      <div class="nav">
+        <div class="title">
+          <img class="img-icon" src="assets/images/sun-yellow.svg" alt="" />
+          <p>
+            Good Morning, <br />
+            <strong>Anand</strong>
+          </p>
         </div>
-        <!-- middle content part starts here  -->
-        <div class="content"></div>
-        <!-- middle content part ends here  -->
-        <!-- profile side part starts here  -->
-        <div class="profile-side">
-          <div class="profile-box">
-            <img
-              src="assets/images/circle-cropped.png"
-              alt="profile image"
-              class="profile-image"
-            />
-            <p class="title">Anand Suryawanshi</p>
-            <p class="sub-title">S.E. Camputer | Div B</p>
-            <hr />
+        <div class="nav-list">
+          <ul>
+            <li class="active">
+              <img class="img-icon" src="assets/images/layout.svg" alt="" />
+              <a href=""> Dashboard</a>
+            </li>
+            <li>
+              <img class="img-icon" src="assets/images/book-open.svg" alt="" />
+              <a href="">Classes</a>
+            </li>
+            <li>
+              <img class="img-icon" src="assets/images/file-text.svg" alt="" />
+              <a href="">General Info</a>
+            </li>
+            <li>
+              <img class="img-icon" src="assets/images/bell.svg" alt="" />
+              <a href="">Notifications</a>
+            </li>
+            <li>
+              <img class="img-icon" src="assets/images/settings.svg" alt="" /><a href="">Settings</a>
+            </li>
+          </ul>
+        </div>
+        <div class="title logout">
+          <p>
+            <img class="" src="assets/images/log-out.svg" alt="" />
+            <a href="logout">Logout</a>
+          </p>
+        </div>
+        <!-- nav side section ends here  -->
+      </div>
+      <!-- middle content part starts here  -->
+      <div class="content">
+        <section id="dashboard" class="dashboard-section">
+          <div class="course-poster">
+            <div class="info-box">
+              <h3 class="title">Fullstack Developer <br>Course </h3>
+              <p class="subtitle"> Starts on 10th August</p>
+              <button>Enroll Now</button>
+            </div>
+            <div class="image-box">
+              <img src="assets/images/course-poster-img.png" alt="">
+            </div>
           </div>
-          <div class="timetable">
-            <p class="sub-title">
-              <img src="assets/images/clock (1).svg" alt="" /> Timetable
+          <!-- message section  -->
+          <div class="messages">
+            <p class="messages-title">
+              <img src="assets/images/clock (1).svg" alt="" /> Messages
             </p>
-            <!-- ^------------------------ -->
-            <div class="time-subject-box">
-              <div class="color-line line-time-color">
-                <h1>|</h1>
+            <div class="messages-box">
+              <div class="msg">
+                <p class="title">Prof.Rane</p>
+                <p class="sub-title">Data Structures</p>
+                <p class="msg-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur natus quibusdam eius eligendi corporis, tenetur fugit officiis sapiente</p>
+                <p style="text-align: right; color: rgb(248, 252, 18);">Reply</p>
               </div>
-              <div class="time-subject">
-                <p class="title line-time-color time">10.00 AM</p>
-                <p class="sub-title subtitle">Data Structures</p>
+              <div class="msg">
+                <p class="title">Prof.Rane</p>
+                <p class="sub-title">Data Structures</p>
+                <p class="msg-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur natus quibusdam eius eligendi corporis, tenetur fugit officiis sapiente</p>
+                <p style="text-align: right; color: rgb(248, 252, 18);">Reply</p>
               </div>
-            </div>
-            <!-- ^------------------------ -->
-            <div class="time-subject-box">
-              <div class="color-line line-time-color">
-                <h1>|</h1>
-              </div>
-              <div class="time-subject">
-                <p class="title line-time-color time">10.00 AM</p>
-                <p class="sub-title subtitle">Data Structures</p>
-              </div>
-            </div>
-            <!-- ^------------------------ -->
-            <div class="time-subject-box">
-              <div class="color-line line-time-color">
-                <h1>|</h1>
-              </div>
-              <div class="time-subject">
-                <p class="title line-time-color time">10.00 AM</p>
-                <p class="sub-title subtitle">Data Structures</p>
+              <div class="msg">
+                <p class="title">Prof.Rane</p>
+                <p class="sub-title">Data Structures</p>
+                <p class="msg-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur natus quibusdam eius eligendi corporis, tenetur fugit officiis sapiente</p>
+                <p style="text-align: right; color: rgb(248, 252, 18);">Reply</p>
               </div>
             </div>
-            <hr class="hr-line" />
+            
           </div>
-          <div class="Assignment">
-            <p class="sub-title">
-              <img src="assets/images/alarm_white_24dp.svg" alt="" />
-              Assignments
-            </p>
+        </section>
+      </div>
+      <!-- middle content part ends here  -->
+      <!-- profile side part starts here  -->
+      <div class="profile-side">
+        <div class="profile-box">
+          <img src="assets/images/circle-cropped.png" alt="profile image" class="profile-image" />
+          <p class="title">Anand Suryawanshi</p>
+          <p class="sub-title">S.E. Camputer | Div B</p>
+          <hr />
+        </div>
+        <div class="timetable">
+          <p class="sub-title">
+            <img src="assets/images/clock (1).svg" alt="" /> Timetable
+          </p>
+          <!-- ^------------------------ -->
+          <div class="time-subject-box">
+            <div class="color-line line-time-color">
+              <h1>|</h1>
+            </div>
+            <div class="time-subject">
+              <p class="title line-time-color time">10.00 AM</p>
+              <p class="sub-title subtitle">Data Structures</p>
+            </div>
+          </div>
+          <!-- ^------------------------ -->
+          <div class="time-subject-box">
+            <div class="color-line line-time-color">
+              <h1>|</h1>
+            </div>
+            <div class="time-subject">
+              <p class="title line-time-color time">10.00 AM</p>
+              <p class="sub-title subtitle">Data Structures</p>
+            </div>
+          </div>
+          <!-- ^------------------------ -->
+          <div class="time-subject-box">
+            <div class="color-line line-time-color">
+              <h1>|</h1>
+            </div>
+            <div class="time-subject">
+              <p class="title line-time-color time">10.00 AM</p>
+              <p class="sub-title subtitle">Data Structures</p>
+            </div>
+          </div>
+          <hr class="hr-line" />
+        </div>
+        <!-- ^^ assignment section starts here -->
+        <div class="Assignment">
+          <p class="sub-title">
+            <img src="assets/images/alarm_white_24dp.svg" alt="" />
+            Assignments Due
+          </p>
+          <div class="assignment-container">
+            <div class="assignment-box">
+              <div class="assignmant-number-box">
+                <h1>1</h1>
+              </div>
+              <div class="Subject-name">
+                <p class="title">Microprocessor</p>
+                <p class="sub-title subtitle">Tuesday, 10 August</p>
+              </div>
+            </div>
+            <div class="assignment-box">
+              <div class="assignmant-number-box">
+                <h1>2</h1>
+              </div>
+              <div class="Subject-name">
+                <p class="title">Engg. Maths III</p>
+                <p class="sub-title subtitle">Wednesday, 11 August</p>
+              </div>
+            </div>
+            <div class="assignment-box">
+              <div class="assignmant-number-box">
+                <h1>3</h1>
+              </div>
+              <div class="Subject-name">
+                <p class="title">Data Structures</p>
+                <p class="sub-title subtitle">Thursday, 12 August</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <!-- profile side part ends here  -->
-    </section>
-  </body>
+    </div>
+    </div>
+    </div>
+    <!-- profile side part ends here  -->
+  </section>
+  <!-- script -->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</body>
+
 </html>
