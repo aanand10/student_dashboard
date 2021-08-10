@@ -133,6 +133,8 @@ body {
   -moz-border-radius: 25px;
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
 }
 .login_box .submit {
   width: 35%;
@@ -149,6 +151,8 @@ body {
   margin: 20px 0;
   padding: 10px 20px 10px 20px;
   font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 /* ================== Mobile style part ===================  */
