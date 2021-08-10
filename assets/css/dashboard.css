@@ -471,7 +471,7 @@ button:hover {
     display: block;
     width: 100%;
     padding-top: 5rem;
-    min-height: 110vh;
+    min-height: 100vh;
   }
   .main-front.container {
     display: flex;
