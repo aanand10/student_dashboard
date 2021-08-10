@@ -463,7 +463,7 @@ button:hover {
   margin-left: 0;
   padding-left: 0;
 }
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   /* .front {
   } */
   .front .main-front .profile-side {
