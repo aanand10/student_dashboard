@@ -303,7 +303,14 @@ button:hover {
   font-size: 1.5rem;
   margin-bottom: 10px;
   padding-left: 25px;
-  /* height: 15%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content .classes .classes-date img {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 10px;
 }
 .content .classes .classes-date p::first-line {
   color: rgb(243, 255, 80);
@@ -324,9 +331,15 @@ button:hover {
   height: 290px;
   width: 250px;
   box-shadow: 1px 1px 25px rgba(255, 255, 255, 0.203);
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
 }
 .content .classes .classes-card-container .classes-card .front {
-  background: red;
+  /* background: red; */
+  border-bottom-left-radius: 25px;
 }
 .content
   .classes
@@ -337,6 +350,7 @@ button:hover {
   width: 100%;
   height: 200px;
   background: white;
+  border-top-right-radius: 25px;
 }
 .content
   .classes
@@ -347,6 +361,20 @@ button:hover {
   .img {
   width: 100%;
   height: 200px;
+  border-top-right-radius: 25px;
+}
+.content
+  .classes
+  .classes-card-container
+  .classes-card
+  .front
+  .classes-card-imgSection
+  .img
+  img {
+  width: 100%;
+  height: 100%;
+  /* height: auto; */
+  border-top-right-radius: 25px;
 }
 .content
   .classes
@@ -357,14 +385,13 @@ button:hover {
   .time {
   text-align: right;
   padding: 3px;
-  color: #04aa6d;
-  /* background: black; */
-  display: inline-block;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  color: #006b44;
+  background: white;
+  display: inline;
+  position: absolute;
+  z-index: 30;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .content
   .classes
@@ -374,8 +401,9 @@ button:hover {
   .classes-card-infoSection {
   height: 90px;
   text-align: center;
-
+  background: red;
   padding: 15px;
+  border-bottom-left-radius: 25px;
 }
 .content .classes .classes-card-container .classes-card .back {
   display: none;
@@ -674,5 +702,9 @@ button:hover {
     flex-direction: column;
     /* margin: 40px; */
     flex-wrap: wrap;
+  }
+  .content .classes {
+    padding: 40px 0;
+    /* margin: 0 -20px; */
   }
 }
