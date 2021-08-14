@@ -289,6 +289,155 @@ button:hover {
   font-size: 13px;
   word-spacing: 1px;
 }
+
+/* ! classes styling goses here  */
+.content .classes {
+  padding: 40px;
+  min-height: 100vh;
+
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.content .classes .classes-date {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  padding-left: 25px;
+  /* height: 15%; */
+}
+.content .classes .classes-date p::first-line {
+  color: rgb(243, 255, 80);
+}
+.content .classes .classes-card-container {
+  /* border: #04aa6d 1px solid; */
+  padding: 5px;
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  column-gap: 30px;
+  row-gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.content .classes .classes-card-container .classes-card {
+  height: 290px;
+  width: 250px;
+  box-shadow: 1px 1px 25px rgba(255, 255, 255, 0.203);
+}
+.content .classes .classes-card-container .classes-card .front {
+  background: red;
+}
+.content
+  .classes
+  .classes-card-container
+  .classes-card
+  .front
+  .classes-card-imgSection {
+  width: 100%;
+  height: 200px;
+  background: white;
+}
+.content
+  .classes
+  .classes-card-container
+  .classes-card
+  .front
+  .classes-card-imgSection
+  .img {
+  width: 100%;
+  height: 200px;
+}
+.content
+  .classes
+  .classes-card-container
+  .classes-card
+  .front
+  .classes-card-imgSection
+  .time {
+  text-align: right;
+  padding: 3px;
+  color: #04aa6d;
+  /* background: black; */
+  display: inline-block;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.content
+  .classes
+  .classes-card-container
+  .classes-card
+  .front
+  .classes-card-infoSection {
+  height: 90px;
+  text-align: center;
+
+  padding: 15px;
+}
+.content .classes .classes-card-container .classes-card .back {
+  display: none;
+  height: 290px;
+  width: 250px;
+  background: rgb(0, 0, 0);
+  z-index: 2;
+  padding: 10px;
+  /* display: flex; */
+  text-align: center;
+  /* text-align: start; */
+}
+.content .classes .classes-card-container .classes-card .back .back-card-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: #04aa6d 1px solid;
+}
+.content
+  .classes
+  .classes-card-container
+  .classes-card
+  .back
+  .back-card-info
+  h4 {
+  font-weight: 400;
+  margin: 5px 0 0 0;
+}
+.content
+  .classes
+  .classes-card-container
+  .classes-card
+  .back
+  .back-card-info
+  .obj {
+  margin: 10px 0;
+  font-size: 14px;
+  list-style: none;
+}
+.content
+  .classes
+  .classes-card-container
+  .classes-card
+  .back
+  .back-card-info
+  .obj
+  li::first-letter {
+  color: yellow;
+}
+
+.content .classes .classes-card-container .classes-card:hover .front {
+  /* background-color: #4d426d; */
+  display: none;
+}
+.content .classes .classes-card-container .classes-card:hover .back {
+  display: block;
+}
+.content .classes .classes-card-container .classes-card card {
+}
+
 /* ^side profile  part */
 .front .main-front .profile-side {
   background-color: var(--profile-side);
