@@ -330,7 +330,7 @@ button:hover {
 .content .classes .classes-card-container .classes-card {
   height: 290px;
   width: 250px;
-  box-shadow: 1px 1px 25px rgba(255, 255, 255, 0.203);
+  box-shadow: 20px 30px 25px rgba(0, 0, 0, 0.15);
   border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
@@ -568,10 +568,6 @@ button:hover {
   width: 80%;
   min-width: 420px;
   padding: 35px 50px;
-  /* transform: translate(-50%, -50%); */
-  /* position: absolute; */
-  /* left: 50%; */
-  /* top: 50%; */
   border-radius: 10px;
   box-shadow: 20px 30px 25px rgba(0, 0, 0, 0.15);
 }
