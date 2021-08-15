@@ -556,6 +556,79 @@ button:hover {
   color: var(--font-col1);
   margin-top: 5px;
 }
+/* ^ styling of queries section goes here  */
+.content .query {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content .query .query-container {
+  background-color: #ffffff;
+  width: 80%;
+  min-width: 420px;
+  padding: 35px 50px;
+  /* transform: translate(-50%, -50%); */
+  /* position: absolute; */
+  /* left: 50%; */
+  /* top: 50%; */
+  border-radius: 10px;
+  box-shadow: 20px 30px 25px rgba(0, 0, 0, 0.15);
+}
+.content .query .query-container h1 {
+  font-size: 30px;
+  text-align: center;
+  color: #1c093c;
+}
+.content .query .query-container p {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  color: #606060;
+  font-size: 14px;
+  font-weight: 400;
+}
+.content .query .query-container form {
+  width: 100%;
+  position: relative;
+  margin: 30px auto 0 auto;
+}
+.content .query .query-container form .row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px 30px;
+  margin-bottom: 20px;
+}
+.content .query .query-container label {
+  color: #1c093c;
+  font-size: 14px;
+}
+textarea,
+input {
+  width: 100%;
+  font-weight: 400;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1.2px solid #c4cae0;
+  margin-top: 5px;
+}
+textarea {
+  resize: none;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+  border-color: #6f6df4;
+}
+button {
+  border: none;
+  padding: 10px 20px;
+  background: linear-gradient(130deg, #6f6df4, #4c46f5);
+  color: #ffffff;
+  border-radius: 3px;
+}
 
 /*! class for subtitle text in profile side  */
 .sub-title {
