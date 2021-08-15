@@ -475,6 +475,7 @@ button:hover {
 .content .download-doc .title {
   text-align: center;
   padding: 10px;
+  margin-top: 30px;
 }
 .content .download-doc .title .heading {
   display: flex;
@@ -510,11 +511,11 @@ button:hover {
   padding: 3px;
 }
 .content .download-doc .doc-list ol li:nth-child(odd) {
-  background: rgba(128, 128, 128, 0.445);
-  background-color: #537895;
-  background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
-  /* background-color: #89d8d3; */
-  background-image: linear-gradient(315deg, #89d8d327 0%, #03c8a769 74%);
+  /* background: rgba(128, 128, 128, 0.445); */
+  /* background-color: #537895; */
+  /* background-image: linear-gradient(315deg, #537895 0%, #09203f 74%); */
+  background-color: #89d8d334;
+  background-image: linear-gradient(315deg, #89d8d30c 0%, #03c8a72a 74%);
 }
 .content .download-doc .doc-list ol li a img {
   height: 30px;
