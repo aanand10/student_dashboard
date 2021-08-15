@@ -759,6 +759,9 @@ button {
 .front .main-front .profile-side .Assignment .assignment-box .title {
   font-size: 0.9rem;
   font-weight: 550;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .front .main-front .profile-side .Assignment .assignment-box .subtitle {
   margin-left: 0;
