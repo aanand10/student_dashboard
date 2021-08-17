@@ -521,41 +521,7 @@ button:hover {
   height: 30px;
   margin-left: 150px;
 }
-/* ^side profile  part */
-.front .main-front .profile-side {
-  background-color: var(--profile-side);
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  width: 18%;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.219);
-  padding: 10px;
-  /* border: 1px solid white; */
-  z-index: 1;
-}
-.front .main-front .profile-side .profile-box {
-  /* border: 1px solid white; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 15px 0;
-}
-.front .main-front .profile-side .profile-box img {
-  width: 80px;
-  border-radius: 50%;
-  box-shadow: -2px 2px 20px rgba(255, 255, 255, 0.285);
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-}
-.title {
-  font-size: 1.1rem;
-  color: var(--font-col1);
-  margin-top: 5px;
-}
+
 /* ^ styling of queries section goes here  */
 .content .query {
   min-height: 100vh;
@@ -624,6 +590,129 @@ button {
   background: linear-gradient(130deg, #6f6df4, #4c46f5);
   color: #ffffff;
   border-radius: 3px;
+}
+
+/* ^styling of about starts here  */
+h1 {
+}
+.content .about {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid white; */
+  flex-wrap: wrap;
+  overflow-x: hidden;
+}
+.content .about .about-me {
+  height: 50vh;
+  width: 38%;
+  background-color: #10002b;
+  /* border: rgb(255, 0, 0) 1px solid; */
+  position: relative;
+  right: 70px;
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border-radius: 10px;
+}
+.content .about .about-me h3 {
+  margin: 10px 0;
+  /* text-align: ; */
+  font-weight: 400;
+}
+.content .about .about-me h4 {
+  margin: 10px 0;
+  text-align: center;
+}
+.content .about .about-me p {
+  margin: 10px 0;
+  text-align: center;
+}
+.content .about .about-project {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 70vh;
+  width: 80%;
+  background-color: white;
+  border: white 1px solid;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border-radius: 10px;
+  color: #2d295c;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.content .about .about-project .project-info {
+  height: 50vh;
+  width: 70%;
+  /* background: yellow; */
+  /* border: 1px solid red; */
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content .about .about-project .project-info .project-info-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content .about .about-project .project-info .project-info-buttons {
+  height: 70px;
+}
+.content .about .about-project .project-info .project-info-buttons a img {
+  height: 40px;
+  margin: 10px 7px;
+}
+.content .about .about-project .project-info .project-info-buttons a:hover img {
+  position: relative;
+  top: -10px;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.171);
+}
+
+/* ^side profile  part */
+.front .main-front .profile-side {
+  background-color: var(--profile-side);
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 18%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.219);
+  padding: 10px;
+  /* border: 1px solid white; */
+  z-index: 1;
+}
+.front .main-front .profile-side .profile-box {
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+.front .main-front .profile-side .profile-box img {
+  width: 80px;
+  border-radius: 50%;
+  box-shadow: -2px 2px 20px rgba(255, 255, 255, 0.285);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.title {
+  font-size: 1.1rem;
+  color: var(--font-col1);
+  margin-top: 5px;
 }
 
 /*! class for subtitle text in profile side  */
@@ -847,5 +936,27 @@ button {
   .content .download-doc .doc-list ol li a img {
     height: 30px;
     margin-left: 50px;
+  }
+  .content .about {
+    margin: 50px 0;
+  }
+  .content .about .about-project {
+    flex-direction: column;
+    width: 90%;
+    padding: 10px;
+    height: auto;
+  }
+  .content .about .about-me {
+    height: auto;
+    width: 80%;
+    position: relative;
+    /* top: -50px; */
+    left: 0px;
+    z-index: 50;
+  }
+
+  .content .about .about-project .project-info {
+    height: auto;
+    width: 90%;
   }
 }
