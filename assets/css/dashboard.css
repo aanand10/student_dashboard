@@ -7,6 +7,9 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
+body {
+  overflow-x: hidden;
+}
 :root {
   --bg1: #3c3257;
   --bg2: #362c4f;
