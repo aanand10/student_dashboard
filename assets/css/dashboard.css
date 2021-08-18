@@ -9,6 +9,7 @@
 }
 body {
   overflow-x: hidden;
+  /* width: 100%; */
 }
 :root {
   --bg1: #3c3257;
@@ -884,7 +885,7 @@ h1 {
     padding: 0;
     width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 0;
   }
   .content .dashboard-section .course-poster {
     width: 100%;
@@ -940,24 +941,28 @@ h1 {
     height: 30px;
     margin-left: 50px;
   }
+
+  /* ABout project styling start here */
   .content .about {
     margin: 50px 0;
   }
   .content .about .about-project {
     flex-direction: column;
     width: 90%;
-    padding: 10px;
+    /* padding: 10px; */
     height: auto;
   }
   .content .about .about-me {
     height: auto;
     width: 80%;
     position: relative;
-    /* top: -50px; */
+    top: 10px;
     left: 0px;
     z-index: 50;
   }
-
+  .content .about .project-info h2 {
+    margin: 35px 0 -7px 0 !important;
+  }
   .content .about .about-project .project-info {
     height: auto;
     width: 90%;
